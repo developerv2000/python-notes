@@ -34,7 +34,6 @@ class Student(User):
     def info(self):
         print(self.name, "marks:", self.marks)
 
-
 teachik = Teacher("Toshpalov Pulatov", 99, "800$")
 teachik.info()
 
