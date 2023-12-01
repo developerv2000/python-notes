@@ -165,6 +165,7 @@ for row in rows:
 
 # Filtering Sequence Elements
 mylist = [1, 4, -5, 10, -7, 2, 3, -1]
+
 # List comprehension expression
 mylist2 = [i for i in mylist if i > 0]  # [1, 4, 10, 2, 3]
 mylist3 = [i if i > 0 else 0 for i in mylist]  # [1, 4, 0, 10, 0, 2, 3, 0]
@@ -268,7 +269,7 @@ b = {'y': 2, 'z': 4 }
 
 chained = ChainMap(a,b)
 chained['y']  # 2
-chained['z']  # 3. If there are duplicate keys, the values from the first mapping get used.
+chained['z']  # 3. If there are duplicate keys, the values from the first mapping is used.
 
 a['y'] = 24
 print(chained['y'])  # 24. A ChainMap uses the original dictionaries,

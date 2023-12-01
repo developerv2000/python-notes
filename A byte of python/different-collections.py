@@ -38,6 +38,4 @@ my_list2 = my_list[:]  # copy
 # list generators
 my_list3 = [2*i for i in my_list2 if i > 2]  # [6, 8, 10]
 
-print()
-
 joined = '__'.join(shop_list)  # apple__mango__banana__potato__carrot

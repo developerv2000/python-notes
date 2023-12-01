@@ -7,10 +7,11 @@ class Champion(metaclass=ABCMeta):
     def info(self):
         return "There can be only one Champion"
 
+
 # person = Champion() # Error abstract class
 
 # Class with class & static methods and private attributes
-class Hero():
+class Hero:
     __priority = "HIGH"  # private attribute
 
     def __init__(self, name, age):
@@ -22,16 +23,17 @@ class Hero():
 
     # Static method
     @staticmethod
-    def destroyAll():
+    def destroy_all():
         print("All heroes have been destroyed")
 
     # Class method
     @classmethod
-    def getPriority(cls):
+    def get_priority(cls):
         return cls.__priority
 
-Hero.destroyAll()
-print(Hero.getPriority())
+
+Hero.destroy_all()
+print(Hero.get_priority())
 
 archer = Hero('Strong Archer', 24)
 print(archer.name)
@@ -39,13 +41,14 @@ print(archer.info())
 
 
 # Class inheritance & hierarchy
-class Parent():
+class Parent:
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
 
     def info(self):
         return self.name + " " + self.surname
+
 
 class Child(Parent):
     def __init__(self, name, surname, age):
@@ -54,6 +57,7 @@ class Child(Parent):
 
     def info(self):
         return self.name + " " + self.surname + " " + str(self.age)
+
 
 father = Parent('Garry', 'Simpson')
 print(father.info())

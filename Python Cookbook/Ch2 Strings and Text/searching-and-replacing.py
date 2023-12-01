@@ -55,4 +55,3 @@ def highlight_match(m):
 
 replaced = re.sub(keyword, highlight_match, text, flags=re.IGNORECASE)
 print(replaced)
-
